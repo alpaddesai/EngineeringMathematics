@@ -1,4 +1,4 @@
-## Engineering Mathematics
+# Engineering Mathematics
 
 The project provides an introduction to Engineering Mathematics
 
