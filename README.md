@@ -13,5 +13,4 @@ All images are either custom by Alpa D Desai or a reference name is provided.
 ![image](HigherEngMath.png)
 ![image](AdvancedEngMath.png)
 
-## Applications of Engineering Mathematics: 
-![image](RFTesting.png)
+
