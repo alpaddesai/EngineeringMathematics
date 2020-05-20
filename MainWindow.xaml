@@ -5,8 +5,151 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EngineeringMathematics"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="MainWindow" Height="368" Width="969" MaxWidth="969" MaxHeight="368">
+    <Grid Margin="0,0,17,32">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="452*"/>
+            <ColumnDefinition Width="23*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl Margin="0,0,9,-28" Grid.ColumnSpan="2" MaxWidth="942" MaxHeight="331">
+            <TabItem x:Name="HigherEngMath" Header="HigherEngMath">
+                <Grid Background="#FFE5E5E5" Height="334" HorizontalAlignment="Left" Width="960" MaxWidth="949" MaxHeight="351" Margin="9,0,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="216*"/>
+                        <RowDefinition Height="103*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="638*"/>
+                        <ColumnDefinition Width="9*"/>
+                    </Grid.ColumnDefinitions>
+                    <CheckBox x:Name="Algebra" Content="Algebra" HorizontalAlignment="Left" Margin="7,19,0,0" VerticalAlignment="Top" Height="21" Width="121" Checked="CheckBox_Checked"/>
+                    <CheckBox x:Name="PartialFractions" Content="PartialFractions" HorizontalAlignment="Left" Margin="7,42,0,0" VerticalAlignment="Top" Height="21" Width="121" Checked="PartialFractions_Checked"/>
+                    <CheckBox x:Name="Logarithms" Content="Logarithms" HorizontalAlignment="Left" Margin="7,63,0,0" VerticalAlignment="Top" Height="21" Width="121" Checked="Logarithms_Checked"/>
+                    <CheckBox x:Name="ExponentialFunctions" Content="Exponential" HorizontalAlignment="Left" Margin="6,87,0,0" VerticalAlignment="Top" Height="21" Width="121" Checked="ExponentialFunctions_Checked"/>
+                    <CheckBox x:Name="HyberbolicFunctions" Content="Hyberbolic" HorizontalAlignment="Left" Margin="6,110,0,0" VerticalAlignment="Top" Height="21" Width="121" Checked="HyberbolicFunctions_Checked"/>
+                    <CheckBox x:Name="ArthGeomProgressions" Content="ArthGeomProg" HorizontalAlignment="Left" Margin="6,131,0,0" VerticalAlignment="Top" Height="21" Width="121" Checked="CheckBox_Checked_1"/>
+                    <CheckBox x:Name="BinomialSeries" Content="BinomialSeries" HorizontalAlignment="Left" Margin="6,152,0,0" VerticalAlignment="Top" Height="21" Width="121" Checked="BinomialSeries_Checked"/>
+                    <CheckBox x:Name="MaclaurinSeries" Content="MaclaurinSeries" HorizontalAlignment="Left" Margin="6,175,0,0" VerticalAlignment="Top" Height="21" Width="121" Checked="MaclaurinSeries_Checked"/>
+                    <CheckBox x:Name="IterativeMethod" Content="IterativeMethod" HorizontalAlignment="Left" Margin="6,196,0,0" VerticalAlignment="Top" Height="21" Width="121" Grid.RowSpan="2" Checked="IterativeMethod_Checked"/>
+                    <CheckBox x:Name="TrigHyberbolic" Content="TrigHyberbolic" HorizontalAlignment="Left" Margin="114,86,0,0" VerticalAlignment="Top" Height="21" Width="121" Checked="TrigHyberbolic_Checked"/>
+                    <CheckBox x:Name="TrigWaveforms" Content="TrigWaveforms" HorizontalAlignment="Left" Margin="113,42,0,0" VerticalAlignment="Top" Height="21" Width="121" Checked="TrigWaveforms_Checked"/>
+                    <CheckBox x:Name="CompoundAngles" Content="CompAngles" HorizontalAlignment="Left" Margin="114,65,0,0" VerticalAlignment="Top" Height="21" Width="121" Checked="CompoundAngles_Checked"/>
+                    <CheckBox x:Name="TrigEqIdentities" Content="TrigEqIdentities" HorizontalAlignment="Left" Margin="113,109,0,0" VerticalAlignment="Top" Height="21" Width="121" Checked="TrigEqIdentities_Checked"/>
+                    <CheckBox x:Name="FunctionsCurves" Content="FunCurves" HorizontalAlignment="Left" Margin="113,130,0,0" VerticalAlignment="Top" Height="21" Width="121" Checked="FunctionsCurves_Checked"/>
+                    <CheckBox x:Name="BinaryOctHex" Content="BinaryOctHex" HorizontalAlignment="Left" Margin="7,2,0,0" VerticalAlignment="Top" Height="21" Width="121" Grid.Row="1" Checked="BinaryOctHex_Checked"/>
+                    <CheckBox x:Name="IntroTrigonometry" Content="IntroTrig" HorizontalAlignment="Left" Margin="7,25,0,0" VerticalAlignment="Top" Height="21" Width="121" Grid.Row="1" Checked="IntroTrigonometry_Checked"/>
+                    <CheckBox x:Name="CartPolar" Content="CartesianPolar" HorizontalAlignment="Left" Margin="7,46,0,0" VerticalAlignment="Top" Height="21" Width="121" Grid.Row="1" Checked="CheckBox_Checked_2"/>
+                    <CheckBox x:Name="IrregAreaVolumes" Content="IrregAreaVolumes" HorizontalAlignment="Left" Margin="113,151,0,0" VerticalAlignment="Top" Height="21" Width="121" Checked="IrregAreaVolumes_Checked"/>
+                    <CheckBox x:Name="ComplexNum" Content="ComplexNum" HorizontalAlignment="Left" Margin="113,174,0,0" VerticalAlignment="Top" Height="21" Width="121" Checked="ComplexNum_Checked"/>
+                    <CheckBox x:Name="DeMoivre" Content="DeMoivre" HorizontalAlignment="Left" Margin="113,195,0,0" VerticalAlignment="Top" Height="21" Width="121" Grid.RowSpan="2" Checked="DeMoivre_Checked"/>
+                    <CheckBox x:Name="MatricesDeterminants" Content="MatricesDeters" HorizontalAlignment="Left" Margin="112,1,0,0" VerticalAlignment="Top" Height="21" Width="121" Grid.Row="1" Checked="MatricesDeterminants_Checked"/>
+                    <CheckBox x:Name="SimulEqMatricDet" Content="SimulEqMatricDet" HorizontalAlignment="Left" Margin="112,24,0,0" VerticalAlignment="Top" Height="21" Width="121" Grid.Row="1" Checked="SimulEqMatricDet_Checked"/>
+                    <CheckBox x:Name="CircleProperties" Content="CircleProperties" HorizontalAlignment="Left" Margin="112,21,0,0" VerticalAlignment="Top" Height="21" Width="121" Checked="CircleProperties_Checked"/>
+                    <CheckBox x:Name="Vectors" Content="Vectors" HorizontalAlignment="Left" Margin="112,45,0,0" VerticalAlignment="Top" Height="21" Width="121" Grid.Row="1" Checked="Vectors_Checked"/>
+                    <CheckBox x:Name="MethDifferentiation" Content="MethDiff" HorizontalAlignment="Left" Margin="229,43,0,0" VerticalAlignment="Top" Height="21" Width="121" Checked="MethDifferentiation_Checked"/>
+                    <CheckBox x:Name="ApplicationsDiff" Content="ApplicationsDifferentiation" HorizontalAlignment="Left" Margin="229,64,0,0" VerticalAlignment="Top" Height="21" Width="166" Checked="ApplicationsDiff_Checked"/>
+                    <CheckBox x:Name="DiffParamEqua" Content="DifferentiationParamEquations" HorizontalAlignment="Left" Margin="230,85,0,0" VerticalAlignment="Top" Height="21" Width="182" Checked="DiffParamEqua_Checked"/>
+                    <CheckBox x:Name="DiffImplicitFunctions" Content="DifferentialImplicitFunctions" HorizontalAlignment="Left" Margin="230,108,0,0" VerticalAlignment="Top" Height="21" Width="174" Checked="DiffImplicitFunctions_Checked"/>
+                    <CheckBox x:Name="LogDifferentiation" Content="LogarithmicDifferentiation" HorizontalAlignment="Left" Margin="230,129,0,0" VerticalAlignment="Top" Height="21" Width="163" Checked="LogDifferentiation_Checked"/>
+                    <CheckBox x:Name="DiffHyberbolicFunction" Content="DifferentialHyberbolicFunction" HorizontalAlignment="Left" Margin="231,150,0,0" VerticalAlignment="Top" Height="21" Width="184" Checked="DiffHyberbolicFunction_Checked"/>
+                    <CheckBox x:Name="AddingAltWave" Content="AddingAltWave" HorizontalAlignment="Left" Margin="229,20,0,0" VerticalAlignment="Top" Height="21" Width="121" Checked="AddingAltWave_Checked"/>
+                    <CheckBox x:Name="DiffInverseTrigHyberbolic" Content="DiffInverseTrigHyberbolic" HorizontalAlignment="Left" Margin="230,174,0,0" VerticalAlignment="Top" Height="21" Width="165" Checked="DiffInverseTrigHyberbolic_Checked"/>
+                    <CheckBox x:Name="PartialDiff" Content="PartialDifferentiation" HorizontalAlignment="Left" Margin="230,195,0,0" VerticalAlignment="Top" Height="21" Width="146" ClickMode="Release" Checked="PartialDiff_Checked"/>
+                    <CheckBox x:Name="TotalDiffRates" Content="TotalDifferentialRates" HorizontalAlignment="Left" Margin="229,1,0,0" VerticalAlignment="Top" Height="21" Width="143" Grid.Row="1" Checked="TotalDiffRates_Checked"/>
+                    <CheckBox x:Name="MaximaMinima" Content="MaximaMinima" HorizontalAlignment="Left" Margin="229,24,0,0" VerticalAlignment="Top" Height="21" Width="121" Grid.Row="1" Checked="MaximaMinima_Checked"/>
+                    <CheckBox x:Name="StandardIntegration" Content="StandardIntegration" HorizontalAlignment="Left" Margin="229,45,0,0" VerticalAlignment="Top" Height="21" Width="140" Grid.Row="1" Checked="StandardIntegration_Checked"/>
+                    <CheckBox x:Name="IntegrationAlgebraicSubstitutions" Content="IntegrationAlgebraicSub" HorizontalAlignment="Left" Margin="432,39,0,0" VerticalAlignment="Top" Height="21" Width="207" Grid.ColumnSpan="2" Checked="IntegrationAlgebraicSubstitutions_Checked"/>
+                    <CheckBox x:Name="IntegrationTrigHyberbolic" Content="IntegrationTrigHyberbolic" HorizontalAlignment="Left" Margin="432,60,0,0" VerticalAlignment="Top" Height="21" Width="160" Checked="IntegrationTrigHyberbolic_Checked"/>
+                    <CheckBox x:Name="PartialFractions1" Content="PartialFractions" HorizontalAlignment="Left" Margin="433,81,0,0" VerticalAlignment="Top" Height="21" Width="121" Checked="PartialFractions1_Checked"/>
+                    <CheckBox x:Name="IntegralSubstitution" Content="IntegralSubstitution" HorizontalAlignment="Left" Margin="433,105,0,0" VerticalAlignment="Top" Height="20" Width="121"/>
+                    <CheckBox x:Name="IntegrationParts" Content="IntegrationParts" HorizontalAlignment="Left" Margin="433,125,0,0" VerticalAlignment="Top" Height="21" Width="121" Checked="IntegrationParts_Checked"/>
+                    <CheckBox x:Name="ApplicationsIntegration" Content="ApplicationsIntegration" HorizontalAlignment="Left" Margin="432,16,0,0" VerticalAlignment="Top" Height="21" Width="148" Checked="ApplicationsIntegration_Checked"/>
+                    <CheckBox x:Name="ReductionFormula" Content="ReductionFormula" HorizontalAlignment="Left" Margin="433,149,0,0" VerticalAlignment="Top" Height="21" Width="121" Checked="ReductionFormula_Checked"/>
+                    <CheckBox x:Name="NumericalIntegration" Content="NumericalIntegration" HorizontalAlignment="Left" Margin="433,173,0,0" VerticalAlignment="Top" Height="21" Width="139" Checked="NumericalIntegration_Checked"/>
+                    <CheckBox x:Name="FirstOrderDiffEq" Content="FirstOrderDiffEquation" HorizontalAlignment="Left" Margin="433,194,0,0" VerticalAlignment="Top" Height="21" Width="148" Checked="FirstOrderDiffEq_Checked"/>
+                    <CheckBox x:Name="HomogeneousDiffEquation" Content="HomogeneousDiffEquation" HorizontalAlignment="Left" Margin="432,0,0,0" VerticalAlignment="Top" Height="21" Width="170" Grid.Row="1" Checked="HomogeneousDiffEquation_Checked"/>
+                    <CheckBox x:Name="Linear1stOrdeDiffEquation" Content="Linear1stOrdeDiffEquation" HorizontalAlignment="Left" Margin="432,23,0,0" VerticalAlignment="Top" Height="21" Width="171" Grid.Row="1" Checked="Linear1stOrdeDiffEquation_Checked"/>
+                    <CheckBox x:Name="Numerical1stOrderDiffEquation" Content="Numerical1stOrderDiffEquation" HorizontalAlignment="Left" Margin="432,44,0,0" VerticalAlignment="Top" Height="21" Width="194" Grid.Row="1" Checked="Numerical1stOrderDiffEquation_Checked"/>
+                    <CheckBox x:Name="SecondOrderDiffEquation" Content="SecondOrderDiffEquation" HorizontalAlignment="Left" Margin="626,18,0,0" VerticalAlignment="Top" Height="21" Width="159" Checked="ApplicationsIntegration_Checked" Grid.ColumnSpan="2"/>
+                    <CheckBox x:Name="DifferentialEquations" Content="DifferentialEquations" HorizontalAlignment="Left" Margin="626,40,0,0" VerticalAlignment="Top" Checked="DifferentialEquations_Checked"/>
+                    <CheckBox x:Name="PowerSeries" Content="PowerSeries" HorizontalAlignment="Left" Margin="626,65,0,0" VerticalAlignment="Top" Width="141" Checked="PowerSeries_Checked"/>
+                    <CheckBox x:Name="PartialDifferential" Content="PartialDifferential" HorizontalAlignment="Left" Margin="626,87,0,0" VerticalAlignment="Top" Checked="PartialDifferential_Checked"/>
+                    <CheckBox x:Name="StatisticalData" Content="StatisticalData" HorizontalAlignment="Left" Margin="626,111,0,0" VerticalAlignment="Top" Checked="StatisticalData_Checked"/>
+                    <CheckBox x:Name="CentralTendencyDispersion" Content="CentralTendencyDispersion" HorizontalAlignment="Left" Margin="626,134,0,0" VerticalAlignment="Top" Checked="CentralTendencyDispersion_Checked"/>
+                    <CheckBox x:Name="Probability" Content="Probability" HorizontalAlignment="Left" Margin="626,153,0,0" VerticalAlignment="Top" Checked="Probability_Checked"/>
+                    <CheckBox x:Name="BinomialPoissionDistribution" Content="BinomialPoissionDistribution" HorizontalAlignment="Left" Margin="626,174,0,0" VerticalAlignment="Top" Checked="BinomialPoissionDistribution_Checked"/>
+                    <CheckBox x:Name="NormalDistribution" Content="NormalDistribution" HorizontalAlignment="Left" Margin="626,195,0,0" VerticalAlignment="Top" Checked="NormalDistribution_Checked"/>
+                    <CheckBox x:Name="LinearCorrelation" Content="LinearCorrelation" HorizontalAlignment="Left" Margin="626,4,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="LinearCorrelation_Checked"/>
+                    <CheckBox x:Name="LinearRegression" Content="LinearRegression" HorizontalAlignment="Left" Margin="626,25,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="LinearRegression_Checked"/>
+                    <CheckBox x:Name="LaplaceTransforms" Content="LaplaceTransforms" HorizontalAlignment="Left" Margin="626,46,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="LaplaceTransforms_Checked"/>
+                    <CheckBox x:Name="InverseLaplace" Content="InverseLaplace" HorizontalAlignment="Left" Margin="807,22,0,0" Checked="InverseLaplace_Checked"/>
+                    <CheckBox x:Name="SolutionsDifferentialEquations" Content="SolutionsDiffEq" HorizontalAlignment="Left" Margin="807,50,0,0" Checked="SolutionsDifferentialEquations_Checked"/>
+                    <CheckBox x:Name="SolutionDiffEquLaplaceTran" Content="DiffEquLaplaceTran" HorizontalAlignment="Left" Margin="807,77,0,0" Checked="SolutionDiffEquLaplaceTran_Checked" Width="121" Grid.ColumnSpan="2"/>
+                    <CheckBox x:Name="NonPeriodFS" Content="NonPeriodFS" HorizontalAlignment="Left" Margin="809,101,0,37" Checked="NonPeriodFS_Checked"/>
+                    <CheckBox x:Name="EvenOddFourierSeries" Content="EvenOddFSeries" HorizontalAlignment="Left" Margin="811,122,0,44"/>
+                    <CheckBox x:Name="FourierSeriesAnyRange" Content="FSeriesAnyRange" HorizontalAlignment="Left" Margin="810,147,0,44" Checked="FourierSeriesAnyRange_Checked"/>
+                    <CheckBox x:Name="HarmonicAnalysis" Content="HarmonicAnalysis" HorizontalAlignment="Left" Margin="811,171,0,62" Width="117" Checked="HarmonicAnalysis_Checked" Grid.RowSpan="2"/>
+                    <CheckBox x:Name="ComplexExponential" Content="ComplexExp" HorizontalAlignment="Left" Margin="812,192,0,67" Checked="ComplexExponential_Checked" Grid.RowSpan="2"/>
+                    <Label Content="Reference : Higher Engineering Mathematics by John Bird" HorizontalAlignment="Left" Margin="214,-4,0,0" VerticalAlignment="Top" Height="28" Width="332"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="AdvEngMath" Header="AdvEngMath" Margin="-2,-2,-2,2">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="FirstOrderODE" Content="Ordinary Differential Equations" HorizontalAlignment="Left" Margin="12,10,0,0" VerticalAlignment="Top" Height="41" Width="186" Click="FirstOrderODE_Click">
+                        <Button.Background>
+                            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="LinearAlgebra" Content="Linear Algebra Vector Calculus" HorizontalAlignment="Left" Margin="12,63,0,0" VerticalAlignment="Top" Height="41" Width="186" Click="FirstOrderODE_Click">
+                        <Button.Background>
+                            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="PartialDifferentialEquations" Content="Fourier Analysis PDEs" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Height="41" Width="186" Click="FirstOrderODE_Click">
+                        <Button.Background>
+                            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
+                        </Button.Background>
+                    </Button>
+                    <Grid Background="#FFE5E5E5">
+                        <Button x:Name="FirstOrderODE1" Content="Ordinary Differential Equations" HorizontalAlignment="Left" Margin="12,10,0,0" VerticalAlignment="Top" Height="41" Width="206" Click="FirstOrderODE_Click">
+                            <Button.Background>
+                                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
+                            </Button.Background>
+                        </Button>
+                        <Button x:Name="LinearAlgebra2" Content="Linear Algebra Vector Calculus" HorizontalAlignment="Left" Margin="14,56,0,0" VerticalAlignment="Top" Height="53" Width="205" Click="LinearAlgebra2_Click">
+                            <Button.Background>
+                                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightLightColorKey}}"/>
+                            </Button.Background>
+                        </Button>
+                        <Button x:Name="FourierAnalysis" Content="Fourier Analysis Partial Diff Equations" HorizontalAlignment="Left" Margin="15,114,0,0" VerticalAlignment="Top" Height="44" Width="203" Click="FourierAnalysis_Click">
+                            <Button.Background>
+                                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightLightColorKey}}"/>
+                            </Button.Background>
+                        </Button>
+                        <Button x:Name="ComplexAnalysis1" Content="Complex Analysis" HorizontalAlignment="Left" Margin="153,175,0,0" VerticalAlignment="Top" Width="202" Height="33" Click="ComplexAnalysis1_Click">
+                            <Button.Background>
+                                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightLightColorKey}}"/>
+                            </Button.Background>
+                        </Button>
+                        <Button x:Name="Numeric_Analysis" Content="Numeric Analysis" HorizontalAlignment="Left" Margin="237,13,0,0" VerticalAlignment="Top" Height="39" Width="190" Click="Numeric_Analysis_Click">
+                            <Button.Background>
+                                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightLightColorKey}}"/>
+                            </Button.Background>
+                        </Button>
+                        <Button x:Name="Optimization_Graph" Content="Optimization Graph" HorizontalAlignment="Left" Margin="238,117,0,0" VerticalAlignment="Top" Height="38" Width="188" Click="Optimization_Graph_Click">
+                            <Button.Background>
+                                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightLightColorKey}}"/>
+                            </Button.Background>
+                        </Button>
+                        <Button x:Name="ProbabilityStatistics1" Content="Probability Statistics" HorizontalAlignment="Left" Margin="235,64,0,0" VerticalAlignment="Top" Height="35" Width="190" Click="ProbabilityStatistics1_Click">
+                            <Button.Background>
+                                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightLightColorKey}}"/>
+                            </Button.Background>
+                        </Button>
+                        <Label Content="Reference: Advanced Engineering Mathematics by Erwin Kreyszig" HorizontalAlignment="Left" Margin="80,226,0,0" VerticalAlignment="Top" Height="34" Width="369"/>
+                    </Grid>
+                </Grid>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>
