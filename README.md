@@ -12,5 +12,6 @@ All images are either custom by Alpa D Desai or a reference name is provided.
 ## Engineering Mathematics
 ![image](HigherEngMath.png)
 ![image](AdvancedEngMath.png)
+![image](Calculus.jpg)
 
 
