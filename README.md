@@ -15,3 +15,5 @@ All images are either custom by Alpa D Desai or a reference name is provided.
 ![image](Calculus.jpg)
 
 ![image](USCopyrightCertificateofRegistration.png)
+
+Additional details reference : https://github.com/alpaddesai/HardwareEngineeringLab4-
